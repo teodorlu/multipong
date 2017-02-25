@@ -10,7 +10,9 @@ while True:
     if mb.button_a.was_pressed():
         radio.send(ME)
 
+    if mb.button_b.was_pressed():
+        radio.send("B")
+
     incoming = radio.receive()
     if incoming:
         mb.display.show(incoming)
-        
