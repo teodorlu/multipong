@@ -1,34 +1,48 @@
-# Micro:bit-python Radiokurs
+# What is this?
 
-- Viser hvordan vi kan bruke Bluetooth-radioen til å kommunisere mellom
-  micro:bits.
-- Mange spillere i multi-pong
-- Hver spiller styrer sin egen racket, og spiller mot alle de andre.
+This code was created exploring micro:bit's radio; its bluetooth connectivity.
 
-Video: https://drive.google.com/open?id=0B5rVYIvOYhKORXhNckcxR3ppYlk
+- `multipong.py` is a distributed version of the classic Pong
+- `cycle.py` sends a message around a group of micro:bits in a cycle.
 
-# Forslag til 5 ukers prosjekt
+Clients autoconnect to an existing message sending a hello-message when the chip
+is reset. This hello triggers a reponse from existing clients, resulting in
+every client knowing what other clients are present; and thereby being able to
+send a ball over to a different, random client.
 
-+ Uke 1: Bli kjent med radio
+# Setup
 
-    Send melding fra en micro:bit, motta med en annen. Sett egen kanal for
-    kommunisering.
+Both applications are standalone programs. I recommend
+the [https://codewith.mu/](mu-editor).
 
-+ Uke 2: Bruk meldinger til "autentisering" på nettverket
+1. Open `multipong.py` in Mu
+2. Connect your micro:bit, and press "flash"
+3. Repeat this for all micro:bits you want to play on.
 
-    Micro:bit'er sier hallo, og alle oppdaterer lister over hvilke micro:bits
-    som finnes.
+# Interface
 
-+ Uke 3: Lag enkel pong
+On the top of the screen, there is an indicator of who you are (id from 1 to
+number of players), and the number of players.
 
-    Hver micro:bit kan kontrollere sin racket og sin ball.
+ØØ**_ (two bright lights, two lesser lights) means:
 
-+ Uke 4: Lag multi-pong
+- I am number 2 (ØØ)
+- There are 4 clients (ØØ**)
 
-    Ballen sendes til andre spillere.
+# Controls
 
-+ Uke 5: Lag spillet kult
+- `A` moves the racket left
+- `B` moves the racket right
+- `reset` triggers a refresh of the other clients, and adds a ball to the game.
+  Use reset on one client after removing a client to get it garbage collected.
 
-    Gjør egne ting
+# Future
 
-_En utfordring kan være minneproblemer, dette må sees nøyere på_
+Some things that could be expanded on:
+
+- There is currently one ball. Many balls at the same time could be fun
+- Showing a scoreboard
+
+An outline to a [radio_kurs.md](task) based on this code has been made (in
+Norwegian).
+
