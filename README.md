@@ -5,7 +5,7 @@ This code was created exploring micro:bit's radio; its bluetooth connectivity.
 - `multipong.py` is a distributed version of the classic Pong
 - `cycle.py` sends a message around a group of micro:bits in a cycle.
 
-Clients autoconnect to an existing message sending a hello-message when the chip
+Clients autoconnect to an existing pool by sending a hello-message when the chip
 is reset. This hello triggers a reponse from existing clients, resulting in
 every client knowing what other clients are present; and thereby being able to
 send a ball over to a different, random client.
