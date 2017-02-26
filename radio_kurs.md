@@ -5,8 +5,6 @@
 - Mange spillere i multi-pong
 - Hver spiller styrer sin egen racket, og spiller mot alle de andre.
 
-Video: https://drive.google.com/open?id=0B5rVYIvOYhKORXhNckcxR3ppYlk
-
 # Forslag til 5 ukers prosjekt
 
 + Uke 1: Bli kjent med radio
