@@ -24,10 +24,10 @@ the [https://codewith.mu/](mu-editor).
 On the top of the screen, there is an indicator of who you are (id from 1 to
 number of players), and the number of players.
 
-ØØ**_ (two bright lights, two lesser lights) means:
+`ØØ**_` (two bright lights, two lesser lights) means:
 
-- I am number 2 (ØØ)
-- There are 4 clients (ØØ**)
+- I am number 2 (`ØØ`)
+- There are 4 clients (`ØØ**`)
 
 # Controls
 
