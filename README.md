@@ -13,7 +13,7 @@ send a ball over to a different, random client.
 # Setup
 
 Both applications are standalone programs. I recommend
-the [https://codewith.mu/](mu-editor).
+the [mu-editor](https://codewith.mu/).
 
 1. Open `multipong.py` in Mu
 2. Connect your micro:bit, and press "flash"
@@ -43,6 +43,6 @@ Some things that could be expanded on:
 - There is currently one ball. Many balls at the same time could be fun
 - Showing a scoreboard
 
-An outline to a [radio_kurs.md](task) based on this code has been made (in
+An outline to a [task](radio_kurs.md) based on this code has been made (in
 Norwegian).
 
